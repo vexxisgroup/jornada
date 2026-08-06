@@ -345,12 +345,25 @@
         margin-left: 4px;
       }
       .nav-lang a {
-        opacity: 0.6;
+        display: inline-flex;
+        opacity: 0.55;
+        border-radius: 3px;
+        transition:
+          opacity 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .nav-lang a:hover {
+        opacity: 0.85;
       }
       .nav-lang a.active {
         opacity: 1 !important;
-        text-decoration: underline;
-        text-underline-offset: 4px;
+        box-shadow: 0 0 0 2px var(--gold-soft);
+      }
+      .nav-lang svg {
+        width: 22px;
+        height: 15px;
+        display: block;
+        border-radius: 2px;
       }
 
       @media (max-width: 900px) {
@@ -1018,7 +1031,7 @@
       .footer-brand p {
         margin-top: 16px;
         color: rgba(251, 243, 234, 0.6);
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.7;
         max-width: 36ch;
       }
@@ -1040,6 +1053,9 @@
       }
       .footer-col a:hover {
         color: var(--gold-soft);
+      }
+      .footer-col a.footer-link-spaced {
+        margin-top: 12px;
       }
       .footer-bottom {
         display: flex;
@@ -1097,7 +1113,7 @@
             />
           </svg>
           <span class="brand-word"
-            ><b>International Symposium on Intimate Surgery</b
+            ><b>International Symposium on<br />Intimate Surgery</b
             ><span>and Regenerative Therapy</span></span
           >
         </a>
@@ -1108,9 +1124,34 @@
           <a href="#venue">Venue</a>
           <a href="#registration">Registration</a>
           <span class="nav-lang">
-            <a href="../index.html">PT</a>
-            <a href="index.html" class="active">EN</a>
-            <a href="../es/index.html">ES</a>
+            <a href="../index.html" aria-label="Português" title="Português">
+              <svg viewBox="0 0 20 14" role="img" aria-hidden="true">
+                <rect width="20" height="14" fill="#009739" />
+                <polygon points="10,1.5 18.5,7 10,12.5 1.5,7" fill="#fedd00" />
+                <circle cx="10" cy="7" r="3.2" fill="#012169" />
+              </svg>
+            </a>
+            <a href="index.html" class="active" aria-label="English" title="English">
+              <svg viewBox="0 0 20 14" role="img" aria-hidden="true">
+                <rect width="20" height="14" fill="#fff" />
+                <g fill="#B22234">
+                  <rect y="0" width="20" height="1.08" />
+                  <rect y="2.15" width="20" height="1.08" />
+                  <rect y="4.31" width="20" height="1.08" />
+                  <rect y="6.46" width="20" height="1.08" />
+                  <rect y="8.62" width="20" height="1.08" />
+                  <rect y="10.77" width="20" height="1.08" />
+                  <rect y="12.92" width="20" height="1.08" />
+                </g>
+                <rect width="8.6" height="7.5" fill="#3C3B6E" />
+              </svg>
+            </a>
+            <a href="../es/index.html" aria-label="Español" title="Español">
+              <svg viewBox="0 0 20 14" role="img" aria-hidden="true">
+                <rect width="20" height="14" fill="#AA151B" />
+                <rect y="3.5" width="20" height="7" fill="#F1BF00" />
+              </svg>
+            </a>
           </span>
         </nav>
         <div class="nav-cta">
@@ -1351,20 +1392,32 @@
                 <span class="tag">Host · Founder</span>
                 <h4>Dr. João Brito Jaenisch Neto</h4>
                 <p>
-                  Graduate of UFCSPA, with additional training in Vaginal
-                  Surgery in Italy and Gynecological Laparoscopy in Germany,
-                  France, and the USA. A national reference in female
-                  intimate surgery, senior member of WARAG and CMA.
+                  Physician graduated from the Federal University of Health
+                  Sciences of Porto Alegre (UFCSPA), with a specialization in
+                  General Surgery and additional training in Vaginal Surgery
+                  in Italy and Gynecological Laparoscopy in Germany, France,
+                  and the United States. He is a national reference in
+                  female intimate surgery and regenerative and functional
+                  gynecology, having been one of the pioneers in introducing
+                  regenerative therapies and advanced technologies for
+                  women's intimate health in Brazil. Senior member of the
+                  World Academy of Regenerative &amp; Aesthetic Gynecology
+                  (WARAG) and the Cellular Medicine Association (CMA).
                 </p>
               </div>
             </div>
-            <div class="br-card">
+            <div class="br-card host">
               <div class="avatar">PG</div>
               <div>
+                <span class="tag">Event Coordinator</span>
                 <h4>Dr. Paulo Guimarães</h4>
                 <p>
-                  Notable work in regenerative gynecology and female intimate
-                  surgery, with recognized contributions to the development
+                  Physician with notable work in regenerative gynecology,
+                  female intimate surgery, and technologies applied to
+                  women's health. He is active in training professionals and
+                  disseminating innovative practices focused on
+                  functionality, well-being, and women's quality of life,
+                  and is recognized for his contribution to the development
                   of the specialty in Brazil.
                 </p>
               </div>
@@ -1374,9 +1427,15 @@
               <div>
                 <h4>Dr. Paulo Palmas</h4>
                 <p>
-                  National reference in regenerative gynecology and female
-                  intimate aesthetics, with clinical, scientific, and
-                  educational work in new technologies.
+                  Full professor at Unicamp, with expertise in urogynecology
+                  and co-creator, together with Dr. Ariel Luksenburg, of the
+                  System Plus for urinary incontinence. A national reference
+                  in regenerative gynecology and female intimate aesthetics,
+                  he carries out clinical, scientific, and educational
+                  activities focused on applying new technologies and
+                  minimally invasive therapies for women's health,
+                  contributing to the continuous training of physicians and
+                  professionals in the field.
                 </p>
               </div>
             </div>
@@ -1385,9 +1444,11 @@
               <div>
                 <h4>Dr. Fernando Spengler</h4>
                 <p>
-                  Pharmacist specializing in allopathic compounding, with
-                  formulations designed to enhance procedures in regenerative
-                  and functional gynecology.
+                  Pharmacist specializing in allopathic compounding, focused
+                  on formulations and products developed to complement and
+                  enhance surgical procedures in regenerative and functional
+                  gynecology, including healing agents, re-epithelializing
+                  agents, depigmenting agents, and drug-delivery systems.
                 </p>
               </div>
             </div>
@@ -1667,11 +1728,8 @@
               ><b>International Symposium on Intimate Surgery</b
               ><span>and Regenerative Therapy in Women</span></span
             >
-            <p>
-              Presented by Hospital Mãe de Deus, conceived by Dr. João Brito
-              Jaenisch — Centro Íntimo da Mulher, a gynecologic cosmetic
-              surgery clinic in Porto Alegre.
-            </p>
+            <p>Coordination: Dr. Paulo Guimarães and Dr. João Brito Jaenisch.</p>
+            <p>Supported by: Hospital Mãe de Deus</p>
           </div>
           <div class="footer-col">
             <h5>Event</h5>
@@ -1686,14 +1744,22 @@
               href="https://www.sympla.com.br/evento/jornada-de-cirurgia-intima-e-terapia-regenerativa-do-hospital-mae-de-deus/3483090"
               target="_blank"
               rel="noopener"
-              >Pricing and registration information directly on Sympla</a
+              ><strong
+                >Pricing and registration information directly on Sympla</strong
+              ></a
             >
-            <a href="https://wa.me/5551998360769" target="_blank" rel="noopener"
+            <a
+              class="footer-link-spaced"
+              href="https://wa.me/5551998360769"
+              target="_blank"
+              rel="noopener"
               >Medical inquiries via WhatsApp</a
             >
-            <p>WhatsApp +55 51 99836-0769</p>
             <p>Dr. João Brito Jaenisch — CRM 12351 (Brazil)</p>
-            <p>Centro Íntimo da Mulher</p>
+            <p>
+              Centro Íntimo da Mulher, a gynecologic cosmetic surgery clinic
+              in Porto Alegre
+            </p>
           </div>
         </div>
         <div class="footer-bottom">

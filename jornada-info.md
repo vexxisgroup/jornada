@@ -44,7 +44,7 @@ Dr. Paulo Guimarães (Brasil)
 Médico com destacada atuação em ginecologia regenerativa, cirurgia íntima feminina e tecnologias aplicadas à saúde da mulher. Atua na formação de profissionais e na difusão de práticas inovadoras voltadas à funcionalidade, bem-estar e qualidade de vida feminina, sendo reconhecido por sua contribuição ao desenvolvimento da especialidade no Brasil.
 
 Dr. Paulo Palmas (Brasil)  
-Referência nacional em ginecologia regenerativa e estética íntima feminina. Desenvolve atividades assistenciais, científicas e educacionais voltadas à aplicação de novas tecnologias e terapias minimamente invasivas para a saúde da mulher, contribuindo para a qualificação contínua de médicos e profissionais da área.
+Professor titular da Unicamp, com expertise em uroginecologia e idealizador, junto com Dr. Ariel Luksenburg, do System Plus para incontinência urinária. Referência nacional em ginecologia regenerativa e estética íntima feminina. Desenvolve atividades assistenciais, científicas e educacionais voltadas à aplicação de novas tecnologias e terapias minimamente invasivas para a saúde da mulher, contribuindo para a qualificação contínua de médicos e profissionais da área.
 
 Dr. Fernando Spengler (Brasil)  
 Farmacêutico especialista em manipulação alopática, com trabalho focado em fórmulas e produtos desenvolvidos para complementar e potencializar procedimentos cirúrgicos na área da ginecologia regenerativa e funcional, dentre eles cicatrizantes, reepitelizantes, despigmentantes e drug-deliverys .
